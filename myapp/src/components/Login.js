@@ -11,7 +11,7 @@ export default function Login(){
         <>
             <div>
                 <h1>Login Here: </h1>
-                <div>Username:<input type='text' name='username'/></div>
+                <div >Username:<input type='text' name='username'/></div>
                 <div>Password:<input type='password' name='password'/></div>
                 <button onClick={authenticate}>Login</button>
             </div>
