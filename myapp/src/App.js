@@ -4,10 +4,13 @@ import AboutUs from './components/AboutUs'
 import ContactUs from './components/ContactUs'
 import Home from './components/Home'
 
+import Login from './components/Login'
+import Dashboard from './components/Dashboard'
+
 function App(){
   return(
     <div className="App">
-      <Router>
+      {/* <Router>
         <nav>
           <ul>
             <li><Link to="/home">Home</Link></li>
@@ -21,7 +24,17 @@ function App(){
           <Route path='/about' element={<AboutUs/>} />
           <Route path='/contact' element={<ContactUs/>} />
         </Routes>
-      </Router>
+      </Router> */}
+
+
+        <Router>
+          <Routes>
+            <Route path='/' element={<Login/>} />
+            <Route path='/dash' element={<Dashboard/>} />
+          </Routes>
+        </Router>
+
+
     </div>
   )
 }
